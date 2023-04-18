@@ -1,0 +1,95 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@700&display=swap');
+
+*{
+    margin: 0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(30, 38%, 92%);
+    
+}
+.container {
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    border-radius: 10px;
+    width: 550px;
+    height: 400px;
+    
+    
+}
+.imagem{
+    background: url(images/image-product-desktop.jpg);
+    background-size: cover;
+    background-color: black;
+    width: 50%;
+}
+.texto {
+    padding-top: 23px;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 50%;
+    background-color: hsl(0, 0%, 100%);
+}
+.perfume{
+    letter-spacing: 3px;
+    color: hsl(228, 12%, 48%);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 11.5px;
+    font-weight: lighter;
+    margin-bottom: 12px;
+}
+.texto > .titulo > h1{
+    color: hsl(212, 21%, 14%);;
+    font-size: 1.7em;
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    margin-bottom: 13px;
+}
+.texto > .descricao > p{
+    color: hsl(228, 12%, 48%);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.8em;
+}
+.texto > .preco{
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+.texto > .preco > .total{
+    font-size: 1.3em;
+    color: hsl(158, 36%, 37%);
+    font-weight:bold;
+}
+.texto > .preco > .desconto{
+    text-decoration: line-through;
+    color: hsl(228, 12%, 48%);
+}
+.botao{
+    display: flex;
+}
+.botao > a{
+    border-radius: 5px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: .9em;
+    color: white;
+    text-decoration: none;
+    display: flex;
+    background-color: hsl(158, 36%, 37%);
+    width: 100%;
+    height: 38px;
+    justify-content: center;
+    align-items: center;   
+}
