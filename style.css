@@ -120,3 +120,43 @@ body {
 .botao>a:hover {
     background-color: rgba(43, 92, 74, 0.832);
 }
+
+/* Mobile Version */
+
+@media (max-width: 600px){
+    body{
+        background-color: black;
+    }
+    .container{
+        border-radius: 0px;
+        background-color: white;
+        padding: 25px 15px;
+        flex-direction: column;
+        width: 330px;
+        height:90vh;
+    }
+    
+    .imagem{
+        background-image: url(images/image-product-mobile.jpg);
+        border-radius: 10px;
+        width: 100%;
+        height:40% ;        
+    }
+    .texto{
+        width: 100%;
+        height: 50%;
+    }
+    .perfume{
+        margin-bottom: 10px;
+    }
+    .texto > .titulo > h1{
+        white-space: nowrap;
+        margin-bottom: 14px;
+    }
+    .texto > .titulo > h1 > span{
+        display: block;
+    }
+    .titulo br{
+        display: none;
+    }
+}
