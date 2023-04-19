@@ -18,7 +18,6 @@ body {
     justify-content: center;
     align-items: center;
     background-color: hsl(30, 38%, 92%);
-
 }
 
 .container {
@@ -28,8 +27,6 @@ body {
     border-radius: 10px;
     width: 550px;
     height: 400px;
-
-
 }
 
 .imagem {
@@ -59,7 +56,6 @@ body {
 .texto>.titulo>h1 {
     line-height: 1.1em;
     color: hsl(212, 21%, 14%);
-    ;
     font-size: 1.8em;
     font-family: 'Fraunces', serif;
     font-weight: 800;
@@ -77,18 +73,21 @@ body {
 .texto>.preco {
     display: flex;
     align-items: center;
-    gap: 14px;
+    gap: 16px;
     margin-top: 10px;
     margin-bottom: 18px;
 }
 
 .texto>.preco>.total {
-    font-size: 1.1em;
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    font-size: .9em;
     color: hsl(158, 36%, 37%);
     font-weight: 900;
 }
 
 .texto>.preco>.desconto {
+    font-size: .9em;
     text-decoration: line-through;
     color: hsl(228, 12%, 48%);
 }
@@ -119,5 +118,5 @@ body {
 }
 
 .botao>a:hover {
-    background-color: rgba(60, 128, 103, 0.832);
+    background-color: rgba(43, 92, 74, 0.832);
 }
