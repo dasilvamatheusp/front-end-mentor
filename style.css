@@ -25,8 +25,8 @@ body {
     display: flex;
     flex-direction: row;
     border-radius: 10px;
-    width: 550px;
-    height: 400px;
+    min-width: 550px;
+    min-height: 400px;
 }
 
 .imagem {
@@ -73,7 +73,7 @@ body {
 .texto>.preco {
     display: flex;
     align-items: center;
-    gap: 16px;
+    gap: 17.5px;
     margin-top: 10px;
     margin-bottom: 18px;
 }
@@ -118,45 +118,61 @@ body {
 }
 
 .botao>a:hover {
-    background-color: rgba(43, 92, 74, 0.832);
+    background-color: rgba(17, 105, 71, 0.726);
+    transition-duration: .3s;
 }
 
-/* Mobile Version */
-
-@media (max-width: 600px){
-    body{
-        background-color: black;
-    }
-    .container{
+@media (max-width: 600px) {
+    .container {
         border-radius: 0px;
-        background-color: white;
-        padding: 25px 15px;
         flex-direction: column;
-        width: 330px;
-        height:90vh;
+        min-width: 330px;
+        height: 90vh;
     }
-    
-    .imagem{
+
+    .imagem {
         background-image: url(images/image-product-mobile.jpg);
-        border-radius: 10px;
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 0px;
         width: 100%;
-        height:40% ;        
+        height: 40%;
     }
-    .texto{
+
+    .texto {
         width: 100%;
-        height: 50%;
+        height: 60%;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
     }
-    .perfume{
+
+    .perfume {
         margin-bottom: 10px;
     }
-    .texto > .titulo > h1{
+
+    .texto>.titulo {
+        width: 100%;
+    }
+
+    .texto>.titulo>h1 {
         white-space: nowrap;
         margin-bottom: 14px;
     }
-    .texto > .titulo > h1 > span{
+
+    .texto>.titulo>h1>span {
         display: block;
     }
-    .titulo br{
+
+    .titulo br {
         display: none;
+    }
+
+    .texto>.preco>.total {
+        font-size: 16.3px;
+    }
+
+    .texto>.preco>.desconto {
+        padding-top: 3.5px;
+        font-size: 16px;
     }
 }
