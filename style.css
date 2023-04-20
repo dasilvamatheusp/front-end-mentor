@@ -123,11 +123,12 @@ body {
 }
 
 @media (max-width: 600px) {
+    
     .container {
         border-radius: 0px;
         flex-direction: column;
         min-width: 330px;
-        height: 90vh;
+        height: 610px;
     }
 
     .imagem {
