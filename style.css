@@ -12,7 +12,7 @@
 }
 
 body {
-    
+
     height: 100vh;
     width: 100vw;
     display: flex;
@@ -70,10 +70,12 @@ body {
     font-weight: 500;
     line-height: 1.7em;
 }
-.texto>.descricao>p>br#olibr{
+
+.texto>.descricao>p>br#olibr {
     display: none;
 }
-.texto>.descricao>p>br#ofbr{
+
+.texto>.descricao>p>br#ofbr {
     display: none;
 }
 
@@ -119,7 +121,7 @@ body {
     display: flex;
     background-color: hsl(158, 36%, 37%);
     width: 100%;
-    height: 41px;
+    height: 43px;
     justify-content: center;
     align-items: center;
 }
@@ -130,15 +132,21 @@ body {
     transition-duration: .3s;
 }
 
-@media (max-width: 600px) {
-    body{
+@media (max-width: 555px) {
+    body {
         overflow-y: hidden;
+        position: relative;
     }
+
     .container {
+        position: absolute;
+        top: 47%;
+        left: 50%;
+        transform: translate(-50%, -50%);
         border-radius: 0px;
         flex-direction: column;
-        min-width: 330px;
-        height: 610px;
+        min-width: 340px;
+        height: 615px;
     }
 
     .imagem {
@@ -180,17 +188,24 @@ body {
         display: none;
     }
 
-    .texto>.descricao>p>br#bybr{
+    .texto>.descricao {
+        width: 103%;
+    }
+
+    .texto>.descricao>p>br#bybr {
         display: none;
     }
-    .texto>.descricao>p>br#olibr{
+
+    .texto>.descricao>p>br#olibr {
         display: block;
     }
-    .texto>.descricao>p>br#crebr{
+
+    .texto>.descricao>p>br#crebr {
         display: none;
     }
-    .texto>.descricao>p>br#ofbr{
-        display: block;
+
+    .texto>.descricao>p>br#ofbr {
+        display: none;
     }
 
     .texto>.preco>.total {
@@ -200,5 +215,8 @@ body {
     .texto>.preco>.desconto {
         padding-top: 3.5px;
         font-size: 16px;
+    }
+    .botao>a{
+        height: 48px;
     }
 }
